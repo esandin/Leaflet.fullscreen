@@ -28,9 +28,13 @@
     fullscreenControl: true
   }).setView([-35, 140], 4);
 
-  L.tileLayer('http://{s}.tiles.mapbox.com/v4/examples.map-i86l3621/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZXhhbXBsZXMiLCJhIjoiOTZQTkFkcyJ9.0DKk_5HaToBWqNOJqCwB-g', {
-    attribution: '<a href="https://www.mapbox.com/about/maps/" target="_blank">© Mapbox © OpenStreetMap</a>'
+  // L.tileLayer('http://{s}.tiles.mapbox.com/v4/examples.map-i86l3621/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZXhhbXBsZXMiLCJhIjoiOTZQTkFkcyJ9.0DKk_5HaToBWqNOJqCwB-g', {
+  //   attribution: '<a href="https://www.mapbox.com/about/maps/" target="_blank">© Mapbox © OpenStreetMap</a>'
+  // }).addTo(map);
+  //http://stamen-tiles.a.ssl.fastly.net/toner/4/15/10.png
+  L.tileLayer('http://stamen-tiles.a.ssl.fastly.net/toner/{z}/{x}/{y}.png', {
+    attribution: '<a href="http://maps.stamen.com/" target="_blank">Stamen maps</a>'
   }).addTo(map);
-</script>
+  </script>
 </body>
 </html>
